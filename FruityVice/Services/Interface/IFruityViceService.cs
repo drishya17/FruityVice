@@ -2,6 +2,9 @@
 
 namespace FruityVice.Services.Interface
 {
+    /// <summary>
+    /// IFruityViceService
+    /// </summary>
     public interface IFruityViceService
     {
         public List<FruitDto> GetFruitsByFamilyService(string family);

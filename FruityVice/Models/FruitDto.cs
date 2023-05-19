@@ -2,6 +2,9 @@
 
 namespace FruityVice.Models
 {
+    /// <summary>
+    /// FruitDto
+    /// </summary>
     public class FruitDto
     {
         public string name { get; set; } = null!;

@@ -6,6 +6,9 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace FruityVice.Tests
 {
+    /// <summary>
+    /// FruityViceControllerTest
+    /// </summary>
     public class FruityViceControllerTest
     {
         public readonly FruityViceController _controller;

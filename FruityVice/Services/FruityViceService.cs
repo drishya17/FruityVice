@@ -6,6 +6,9 @@ using FruityVice.URLHelpers;
 
 namespace FruityVice.Services
 {
+    /// <summary>
+    /// FruityViceService
+    /// </summary>
     public class FruityViceService : IFruityViceService
     {
         private readonly List<FruitDto> fruitList = new List<FruitDto>()
@@ -48,12 +51,21 @@ namespace FruityVice.Services
         {
         }
 
+        /// <summary>
+        /// GetAllFruitsService
+        /// </summary>
+        /// <returns></returns>
         public List<FruitDto> GetAllFruitsService()
         {
             var data = fruitList;
             return data;
         }
 
+        /// <summary>
+        /// GetFruitsByFamilyService
+        /// </summary>
+        /// <param name="family"></param>
+        /// <returns></returns>
         public List<FruitDto> GetFruitsByFamilyService(string family)
         {
             var data = fruitList.Where(i => i.family == family).ToList();

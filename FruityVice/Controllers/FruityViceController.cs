@@ -17,11 +17,20 @@ namespace FruityVice.Controllers
         }
 
         #region "GET Calls"
+        /// <summary>
+        /// GetAllfruits
+        /// </summary>
+        /// <returns>List</returns>
         [HttpGet]
         [Route("fruit/all")]
         public IActionResult GetAll() =>
             (IActionResult)Ok(this._fruityViceService.GetAllFruitsService());
 
+        /// <summary>
+        /// GetFruitsByFamily
+        /// </summary>
+        /// <param name="family"></param>
+        /// <returns></returns>
         [HttpPost]
         [Route("fruit/family")]
         public IActionResult GetFruitsByFamily(Family family) =>

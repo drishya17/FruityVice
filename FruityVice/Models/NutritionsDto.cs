@@ -1,5 +1,8 @@
 ﻿namespace FruityVice.Models
 {
+    /// <summary>
+    /// NutritionsDto
+    /// </summary>
     public class NutritionsDto
     {
         public int calories { get; set; }
